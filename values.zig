@@ -9,7 +9,7 @@ const ExampleErrorSet = error{
     ExampleErrorVariant,
 };
 
-pub fn main() !void {
+pub fn main() void {
     // integers
     const one_plus_one: i32 = 1 + 1;
     print("1 + 1 = {}\n", .{one_plus_one});
