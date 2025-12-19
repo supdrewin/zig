@@ -6,7 +6,7 @@ fn swizzleRgbaToBgra(rgba: [4]u8) [4]u8 {
     return .{ b, g, r, a };
 }
 
-pub fn main() !void {
+pub fn main() void {
     const pos = [_]i32{ 1, 2 };
     const x, const y = pos;
     print("x = {}, y = {}\n", .{ x, y });
