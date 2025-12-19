@@ -7,7 +7,7 @@ pub fn unpack(x: @Vector(4, f32), y: @Vector(4, f32)) @Vector(4, f32) {
     return .{ a, b, c, d };
 }
 
-pub fn main() !void {
+pub fn main() void {
     const x: @Vector(4, f32) = .{ 1.0, 2.0, 3.0, 4.0 };
     const y: @Vector(4, f32) = .{ 5.0, 6.0, 7.0, 8.0 };
     print("{}", .{unpack(x, y)});
