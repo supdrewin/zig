@@ -1,10 +1,10 @@
-const Treshold = struct {
+const Threshold = struct {
     minimum: f32 = 0.25,
     maximum: f32 = 0.75,
 
     const Category = enum { low, medium, high };
 
-    fn categorize(t: Treshold, value: f32) Category {
+    fn categorize(t: Threshold, value: f32) Category {
         assert(t.maximum >= t.minimum);
         if (value < t.minimum) return .low;
         if (value > t.maximum) return .high;
@@ -13,7 +13,7 @@ const Treshold = struct {
 };
 
 pub fn main() !void {
-    var threshold: Treshold = .{
+    var threshold: Threshold = .{
         .maximum = 0.20,
     };
     const category = threshold.categorize(0.90);
